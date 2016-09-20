@@ -11,3 +11,27 @@ if (null !== $art) {
 }
 ?>
 ```
+## Kategorie aufrufen
+```php
+<?php
+$category_id = 3;
+$clang_id    = 2;
+$cat = rex_category::get($category_id, $clang_id);
+?>
+```
+
+## Unterkatgorien der Kategorie
+```php
+<?php
+$ignore_offlines = false;
+$children = $cat->getChildren($ignore_offlines);
+?>
+```
+
+## Artikel der Kategorie
+```php
+<?php
+$ignore_offlines = false;
+$children = $cat->getArticles($ignore_offlines);
+?>
+```
