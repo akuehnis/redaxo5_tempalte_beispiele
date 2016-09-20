@@ -1,4 +1,4 @@
-# redaxo5_tempalte_beispiele
+# redaxo5_template_beispiele
 
 ## Artikel aufrufen und ausgeben
 ```php
