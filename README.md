@@ -83,6 +83,6 @@ Ich bin auf der Startseite
 
 ```
 <?php if (rex_article::getCurrentId() == rex_article::getNotfoundArticleId()):?>
-Ich bin auf der Startseite
+Ich bin auf der Not-Found-Seite
 <?php endif;?>
 ```
