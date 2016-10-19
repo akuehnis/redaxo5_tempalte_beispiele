@@ -70,3 +70,19 @@ if ('' != $subnav_content) {
 ?>
 ```
 
+## Prüfen, ob auf Start-Seite
+
+```
+<?php if (rex_article::getCurrentId() == rex_article::getSiteStartArticleId()):?>
+Ich bin auf der Startseite
+<?php endif;?>
+```
+
+
+## Prüfen, ob auf der Not-Found-Seite
+
+```
+<?php if (rex_article::getCurrentId() == rex_article::getNotfoundArticleId()):?>
+Ich bin auf der Startseite
+<?php endif;?>
+```
