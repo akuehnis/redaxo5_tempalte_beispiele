@@ -86,3 +86,9 @@ Ich bin auf der Startseite
 Ich bin auf der Not-Found-Seite
 <?php endif;?>
 ```
+
+## Artikel-Name als Title ausgeben
+<? echo $this->getValue('name');?>
+```
+<title><? echo $this->getValue('name');?></title>
+```
