@@ -88,7 +88,15 @@ Ich bin auf der Not-Found-Seite
 ```
 
 ## Artikel-Name als Title ausgeben
-<? echo $this->getValue('name');?>
+
 ```
 <title><? echo $this->getValue('name');?></title>
+```
+
+## Meta-Seitenbeschreibung
+
+Im Addon Meta-Infos ein Textarea-Feld mit dem Namen art_description erstellen.
+
+```
+<meta name="description" content="<? echo str_replace("\n", '', $this->getValue('art_description'));?>"/>
 ```
